@@ -19,6 +19,10 @@ let usersSchema = new Schema({
         },
         age:{
             type: Number
+        },
+        createdBy:{
+            type: String,
+            required: [true, "createdBy is mandatory"]
         }
 
     }, {timestamps:true})
